@@ -20,7 +20,7 @@ abstract class Field {
     protected Label|null $label = null;
     protected Group|null $group = null;
     protected string $view;
-    protected mixed $value;
+    protected mixed $value = null;
     protected array|string $rules;
     protected array $errors = [];
 
