@@ -13,7 +13,7 @@ class CssClassManager {
     }
 
     public function set(AttributeManager & $attribute, ... $classes) : void {
-        $this->classes->merge($classes)->unique()->values();
+        $this->classes = $this->classes->merge($classes)->unique()->values();
         $attribute->set(FieldAttribute::CSSCLASS, $this->classes->implode(' '));
     }
 
