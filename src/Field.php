@@ -21,7 +21,7 @@ abstract class Field {
     protected Group|null $group = null;
     protected string $view;
     protected mixed $value = null;
-    protected array|string $rules;
+    protected array|string $rules = [];
     protected array $errors = [];
 
     public function __construct(FieldType $type, string $name, array $groups = []) {
