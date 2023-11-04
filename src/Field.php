@@ -29,7 +29,7 @@ abstract class Field {
         $this->type = $type->value;
         $this->attribute = new AttributeManager($name, $groups);
         $this->classes = new CssClassManager();
-        $this->view = config('zen.form.view.' . $this->type);
+        $this->view = config('zen.form.view.' . $this->type, '');
     }
 
     public function getName() : string {
