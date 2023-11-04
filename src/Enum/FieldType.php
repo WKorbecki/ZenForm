@@ -11,4 +11,5 @@ enum FieldType : string {
     case TIME = 'time';
     case HIDDEN = 'hidden';
     case SELECT = 'select';
+    case NUMBER = 'number';
 }

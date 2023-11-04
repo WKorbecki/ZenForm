@@ -161,6 +161,7 @@ abstract class Field {
             case FieldType::DATE->value:
             case FieldType::TIME->value:
             case FieldType::HIDDEN->value:
+            case FieldType::NUMBER->value:
             case FieldType::TEXT->value: return Input::init($type, $name, $groups);
         }
 
