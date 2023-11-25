@@ -52,6 +52,8 @@ class AttributeManager {
             return $name;
         }
 
-        return '[' . implode('][', [... $groups, $name]) . ']';
+        $firstGroup = array_shift($groups);
+
+        return $firstGroup . '[' . implode('][', [... $groups, $name]) . ']';
     }
 }
